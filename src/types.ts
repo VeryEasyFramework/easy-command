@@ -1,3 +1,6 @@
+/**
+ * The output of the runCommand function.
+ */
 export interface RunOutput {
   /* The output of the stdout */
   stdout: string;
@@ -11,6 +14,9 @@ export interface RunOutput {
   signal: Deno.Signal | null;
 }
 
+/**
+ * The options that can be passed to the runCommand function.
+ */
 export interface RunOptions {
   /* The arguments that will be passed to the command */
   args?: string[];
