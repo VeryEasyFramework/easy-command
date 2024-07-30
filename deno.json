@@ -1,0 +1,8 @@
+{
+  "name": "@eveffer/easy-command",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "imports": {
+    "@eveffer/color-me": "jsr:@eveffer/color-me@^0.1.4"
+  }
+}
