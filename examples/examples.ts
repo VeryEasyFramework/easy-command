@@ -137,7 +137,7 @@ async function withExitCodeCheck() {
 }
 
 /**
- * The examples that will be exported.
+ * The examples that can be run to demonstrate the functionality of the runCommand function.
  */
 export const examples = {
   simpleUseCase,
