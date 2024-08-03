@@ -1,9 +1,11 @@
 {
-  "name": "@eveffer/easy-command",
+  "name": "@vef/easy-command",
   "version": "1.0.2",
   "exports": "./mod.ts",
-  "exclude": [".github"],
-  "imports": {
-    "@eveffer/color-me": "jsr:@eveffer/color-me@^0.1.4"
-  }
+  "publish": {
+    "exclude": [
+      ".github"
+    ]
+  },
+  "imports": { "@vef/color-me": "jsr:@vef/color-me@^1.0.3" }
 }

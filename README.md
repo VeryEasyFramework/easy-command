@@ -5,7 +5,7 @@ Run terminal commands with ease in your Deno project
 ## Installation
 
 ```shell
-deno add @eveffer/easy-command
+deno add @vef/easy-command
 ```
 
 ## API
@@ -65,7 +65,7 @@ interface RunOutput {
 > them:
 >
 > ```ts
-> import { examples } from "@eveffer/easy-command";
+> import { examples } from "@vef/easy-command";
 > await examples.simpleUseCase();
 > await examples.withArgs();
 > // etc.
@@ -74,7 +74,7 @@ interface RunOutput {
 ### Simple Use Case
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 await runCommand("ls");
 ```
@@ -89,7 +89,7 @@ mod.ts
 ### With Arguments
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 const { stdOut } = await runCommand("ls", {
   args: ["-a"],
@@ -111,7 +111,7 @@ mod.ts
 ### Specifying the Working Directory
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 const { stdOut } = await runCommand("ls", {
   args: ["-a"],
@@ -124,8 +124,8 @@ console.log(stdOut);
 ### Real-time Output Processing
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
-import { colorMe } from "@eveffer/color-me";
+import { runCommand } from "@vef/easy-command";
+import { colorMe } from "@vef/color-me";
 
 await runCommand("git", {
   args: ["pull"],
@@ -142,7 +142,7 @@ await runCommand("git", {
 ### With Environment Variables
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 await runCommand("/bin/sh", {
   args: ["-c", " echo $SOME_VARIABLE"],
@@ -157,7 +157,7 @@ await runCommand("/bin/sh", {
 ### Check if the command was successful
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 const { success } = await runCommand("ls");
 
@@ -171,7 +171,7 @@ if (success) {
 ### Check the exit code of the command
 
 ```ts
-import { runCommand } from "@eveffer/easy-command";
+import { runCommand } from "@vef/easy-command";
 
 const { code } = await runCommand("ls");
 

@@ -1,5 +1,5 @@
 import { runCommand } from "../src/runCommand.ts";
-import { colorMe } from "@eveffer/color-me";
+import { colorMe } from "@vef/color-me";
 
 function print(msg: string, functionName: string) {
   console.log();
